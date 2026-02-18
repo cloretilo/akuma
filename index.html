@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akuma Inc | Hardware Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Akuma<span>Inc</span></div>
+                <div class="nav-links">
+                    <a href="hardware.html" data-i18n="nav.hardware">HARDWARE</a>
+                    <a href="firmware.html" data-i18n="nav.firmware">FIRMWARE</a>
+                    <a href="#footer" data-i18n="nav.support">SOPORTE</a>
+                </div>
+            
+                <div style="display:flex; align-items:center; gap:15px;">
+                    <div class="lang-wrapper">
+                        <select id="language-select" class="lang-select">
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </div>
+            
+                    <a href="https://t.me/akumainc" target="_blank" class="btn-glow">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.928 2.528c-.366-.272-.885-.296-1.282-.058L2.64 11.233c-.705.422-.647 1.48.096 1.83l4.318 2.035 1.54 4.906c.15.48.66.757 1.143.623.235-.065.446-.226.58-.45l2.062-3.41 4.54 3.42c.55.413 1.353.15 1.54-.533l3.774-15.932c.118-.497-.107-1.008-.565-1.192zm-7.66 9.948l-6.21 4.354-.747-2.38 9.38-5.83c.25-.156.495.176.265.342l-2.688 3.514z"/></svg>
+                        TELEGRAM
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="status-badge">
+                <span class="dot"></span> <span data-i18n="status">ESTADO: 100% INDETECTABLE / SEGURO</span>
+            </div>
+            <h1>Akuma<br><span>Inc</span></h1>
+            <p data-i18n="hero.text">Hardware DMA de grado militar y firmware FPGA con emulación 1:1. La ventaja invisible que estabas buscando.</p>
+            <br>
+            <a href="#shop" class="btn-glow" style="padding: 15px 40px; font-size: 1rem;" data-i18n="btn.catalog">VER CATÁLOGO</a>
+        </div>
+    </section>
+
+    <section class="products" id="shop">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="sec.title">Arsenal Técnico</h2>
+                <p class="mono" data-i18n="sec.subtitle">// SELECT YOUR GEAR</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>DMA Board V5.0</h3>
+                    <p style="color: #666;" data-i18n="card1.desc">Basada en chip Xilinx Artix-7 35T. Gateware personalizado pre-instalado. Máxima velocidad de lectura.</p>
+                    <ul class="specs-list mono">
+                        <li>PCIe x1/x4</li>
+                        <li>6000 MB/s RW</li>
+                        <li>Kill-Switch</li>
+                    </ul>
+                    <span class="price-tag">€299.00</span>
+                    <a href="hardware.html" class="btn-glow" style="width:100%; margin-top:15px;" data-i18n="card1.btn">Ver Detalles</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🧬</div>
+                    <h3>Firmware 1:1</h3>
+                    <p style="color: #666;" data-i18n="card2.desc">Emulación perfecta de dispositivos reales (WIFI, Bluetooth, Ethernet). Totalmente invisible.</p>
+                    <ul class="specs-list mono">
+                        <li>Config Space Único</li>
+                        <li>Anti-Detección</li>
+                        <li>Lifetime Update</li>
+                    </ul>
+                    <span class="price-tag">€149.00</span>
+                    <a href="firmware.html" class="btn-glow" style="width:100%; margin-top:15px;" data-i18n="card2.btn">Configurar</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🕹️</div>
+                    <h3>KMBox Net</h3>
+                    <p style="color: #666;" data-i18n="card3.desc">Controlador de periféricos por red. Simulación de ratón y teclado indetectable.</p>
+                    <ul class="specs-list mono">
+                        <li>LCD Display</li>
+                        <li>Dual PC</li>
+                        <li>API Python</li>
+                    </ul>
+                    <span class="price-tag">€65.00</span>
+                    <a href="https://t.me/akumainc" target="_blank" class="btn-glow" style="width:100%; margin-top:15px;" data-i18n="card3.btn">Añadir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding container">
+        <div class="section-title">
+            <h2 data-i18n="faq.title">Preguntas Frecuentes</h2>
+            <p class="mono" data-i18n="faq.subtitle">// F.A.Q.</p>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-i18n="faq.q1">¿Es realmente indetectable?</span>
+                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M7 10l5 5 5-5z"/></svg>
+                </div>
+                <div class="faq-answer"><p data-i18n="faq.a1">Sí. Al usar DMA...</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-i18n="faq.q2">¿Hacéis envíos internacionales?</span>
+                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M7 10l5 5 5-5z"/></svg>
+                </div>
+                <div class="faq-answer"><p data-i18n="faq.a2">Enviamos a todo el mundo...</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-i18n="faq.q3">¿Necesito un segundo PC?</span>
+                    <svg class="faq-icon" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M7 10l5 5 5-5z"/></svg>
+                </div>
+                <div class="faq-answer"><p data-i18n="faq.a3">Sí, para garantizar la seguridad total...</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: linear-gradient(to bottom, #000, #0a0a0a);">
+        <div class="container">
+            <div class="section-title" style="text-align: center; border: none; margin-bottom: 40px;">
+                <h2 data-i18n="reviews.title">Clientes Verificados</h2>
+                <p class="mono" style="color: var(--primary);" data-i18n="reviews.subtitle">// TRUSTED BY ELITES</p>
+            </div>
+        </div>
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r1"></p><div class="user-stamp"><div class="avatar-circle">🇪🇸</div><div><span class="mono" style="color:#fff;">ID: 9X2A</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r2"></p><div class="user-stamp"><div class="avatar-circle">🇺🇸</div><div><span class="mono" style="color:#fff;">ID: B4R7</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r3"></p><div class="user-stamp"><div class="avatar-circle">🇩🇪</div><div><span class="mono" style="color:#fff;">ID: V1P3R</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r4"></p><div class="user-stamp"><div class="avatar-circle">🇫🇷</div><div><span class="mono" style="color:#fff;">ID: KR4U5</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r5"></p><div class="user-stamp"><div class="avatar-circle">🇬🇧</div><div><span class="mono" style="color:#fff;">ID: SH4D0W</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r6"></p><div class="user-stamp"><div class="avatar-circle">🇮🇹</div><div><span class="mono" style="color:#fff;">ID: 3L1T3</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r1"></p><div class="user-stamp"><div class="avatar-circle">🇪🇸</div><div><span class="mono" style="color:#fff;">ID: 9X2A</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r2"></p><div class="user-stamp"><div class="avatar-circle">🇺🇸</div><div><span class="mono" style="color:#fff;">ID: B4R7</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r3"></p><div class="user-stamp"><div class="avatar-circle">🇩🇪</div><div><span class="mono" style="color:#fff;">ID: V1P3R</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r4"></p><div class="user-stamp"><div class="avatar-circle">🇫🇷</div><div><span class="mono" style="color:#fff;">ID: KR4U5</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r5"></p><div class="user-stamp"><div class="avatar-circle">🇬🇧</div><div><span class="mono" style="color:#fff;">ID: SH4D0W</span></div></div></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="reviews.r6"></p><div class="user-stamp"><div class="avatar-circle">🇮🇹</div><div><span class="mono" style="color:#fff;">ID: 3L1T3</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="logo" style="margin-bottom:10px;">Akuma<span>Inc</span></div>
+            <p class="disclaimer" data-i18n="footer.disclaimer">DESCARGO DE RESPONSABILIDAD: Todo el material es para fines educativos...</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

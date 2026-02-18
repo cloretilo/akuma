@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKUMA INC | Firmware</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Akuma<span>Inc</span></div>
+                <div class="nav-links">
+                    <a href="index.html" data-i18n="nav.home">INICIO</a>
+                    <a href="hardware.html" data-i18n="nav.hardware">HARDWARE</a>
+                    <a href="firmware.html" data-i18n="nav.firmware">FIRMWARE</a>
+                    <a href="#footer" data-i18n="nav.support">SOPORTE</a>
+                </div>
+                <div style="display:flex; align-items:center; gap:15px;">
+                    <div class="lang-wrapper">
+                        <select id="language-select" class="lang-select">
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </div>
+                    <a href="https://t.me/akumainc" target="_blank" class="btn-glow">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.928 2.528c-.366-.272-.885-.296-1.282-.058L2.64 11.233c-.705.422-.647 1.48.096 1.83l4.318 2.035 1.54 4.906c.15.48.66.757 1.143.623.235-.065.446-.226.58-.45l2.062-3.41 4.54 3.42c.55.413 1.353.15 1.54-.533l3.774-15.932c.118-.497-.107-1.008-.565-1.192zm-7.66 9.948l-6.21 4.354-.747-2.38 9.38-5.83c.25-.156.495.176.265.342l-2.688 3.514z"/></svg>
+                        TELEGRAM
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding container">
+        <div class="split-section" style="flex-direction: row-reverse;">
+            <div class="split-content">
+                <h2 style="font-size:2.5rem; margin-bottom:10px;" data-i18n="fw.title">FIRMWARE 1:1</h2>
+                <p class="mono" style="color:var(--primary); margin-bottom:30px;" data-i18n="fw.subtitle">// EMULACIÓN TOTAL</p>
+                <p style="color:#aaa; margin-bottom:30px;" data-i18n="fw.desc">Nuestro firmware personalizado se compila...</p>
+                <ul style="list-style:none; margin-bottom:30px;" class="mono">
+                    <li style="margin-bottom:10px; color:#ccc;" data-i18n="fw.list1">> Espacio de Config Único</li>
+                    <li style="margin-bottom:10px; color:#ccc;" data-i18n="fw.list2">> Bypass Drivers</li>
+                    <li style="margin-bottom:10px; color:#ccc;" data-i18n="fw.list3">> Cloud Updates</li>
+                </ul>
+                <a href="https://t.me/tecleador" target="_blank" class="btn-glow" data-i18n="fw.btn">SOLICITAR BUILD - €149</a>
+            </div>
+            <div class="split-visual">
+                <div class="terminal">
+                    <div style="margin-bottom:15px; border-bottom:1px solid #333; padding-bottom:10px; display:flex; gap:5px;">
+                        <div class="dot" style="background:#ff5f56;"></div><div class="dot" style="background:#ffbd2e;"></div><div class="dot" style="background:#27c93f;"></div>
+                    </div>
+                    <div style="color:#ccc; font-size:0.85rem; line-height:1.6;">
+                        <div class="cmd">sudo ./inject_fw --stealth</div><br>
+                        <div>[+] Loading FPGA Core... <span class="log-success">OK</span></div>
+                        <div>[>] Spoofing Device ID... <span style="color:var(--primary)">0x184A</span></div>
+                        <div>[>] Randomizing Headers... <span class="log-success">DONE</span></div>
+                        <div>[!] Anti-Cheat Status: <span style="color:#888;">BYPASSED</span></div><br>
+                        <div class="cmd">_ <span class="cursor"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container"><p class="disclaimer" data-i18n="footer.disclaimer">© 2024 Akuma Inc.</p></div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
